@@ -349,3 +349,25 @@
 .copyright a:hover {
     color: var(--light);
 }
+#zalo {
+    position: fixed;
+    bottom: 90px;
+    right: 40px;
+}
+
+#messenger {
+    position: fixed;
+    bottom: 140px;
+    right: 40px;
+}
+
+#call {
+    position: fixed;
+    bottom: 190px;
+    right: 40px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
