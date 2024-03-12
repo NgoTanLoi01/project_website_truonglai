@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #F3BD00;
+    --primary: #ed1c24;
     --secondary: #757575;
     --light: #F3F6F8;
     --dark: #0C2B4B;
@@ -97,10 +97,7 @@
     outline: none;
 }
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
-}
+
 
 .navbar .dropdown-toggle::after {
     border: none;
@@ -2978,7 +2975,7 @@ img.testimonial-thumb {
 }
 
 .banner-title {
-  color: #fff;
+  color: #2b4f65;
   text-transform: uppercase;
   font-size: 58px;
   font-weight: 900;
@@ -3024,11 +3021,11 @@ img.testimonial-thumb {
 .breadcrumb .breadcrumb-item,
 .breadcrumb li a:focus,
 .breadcrumb li a:hover {
-  color: #fff !important;
+  color: #60727b !important;
 }
 
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
-  color: #fff;
+  color: #60727b;
 }
 
 /*-- About us page --*/
