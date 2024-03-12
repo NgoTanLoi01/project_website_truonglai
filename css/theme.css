@@ -1,0 +1,37 @@
+/*--------------------------------------------------------------
+/** 1. VARIABLES
+--------------------------------------------------------------*/
+:root {
+    --bg-color:#02587b;
+    --top-bg-color:white;
+    --bg-button-primary:#ed1c24;
+
+    --first-color:#02587b;
+    --second-color:#ed1c24;
+    --third-color:#102F3B;
+    --four-color:#dee8ee;
+
+
+    --primary-color: #b83f26;
+    --secondary-color: #df7e1c;
+   
+    
+    
+    
+  --accent-color: #0d0d0d;
+ /* --accent-color: #efefef;*/
+  --bs-gray-100: #f3f3f3;
+  --bs-gray-200: #e7e5e2;
+  --bs-primary: #02587b;
+  /*--bs-primary: #ff0000;*/
+  --bs-secondary: #dbe6eb;
+  --bs-primary-rgb: 2, 88, 123;
+  /*--bs-primary-rgb: 220, 53, 69;*/
+  --bs-body-bg-rgb: 246, 245, 242;
+  --bs-light: #fff;
+  --bs-dark: #000;
+  --navbar-color-color: #131814;
+  --swiper-theme-color: #02587b !important;
+  --swiper-pagination-color: #02587b !important;
+
+}
