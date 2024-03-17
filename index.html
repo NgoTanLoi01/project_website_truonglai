@@ -7,7 +7,6 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <link href="img/favicon.ico" rel="icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -26,7 +25,66 @@
 </head>
 
 <style>
+    .courses-item {
+        border-radius: 10px;
+        /* Đặt bán kính cho việc làm tròn các góc thành 10px */
+        overflow: hidden;
+        /* Đảm bảo hình ảnh không vượt ra khỏi phần tử sau khi làm tròn góc */
+        background-color: #2b4f65 !important;
+    }
 
+    /* Nếu bạn muốn làm tròn các góc của nút "Xem thêm" */
+    .courses-overlay .btn {
+        border-radius: 5px;
+        /* Đặt bán kính cho việc làm tròn các góc của nút thành 5px */
+    }
+
+    .elementor-icon-box-title {
+        color: #333;
+        /* Màu chữ cho tiêu đề */
+        font-size: 18px;
+        /* Kích thước chữ cho tiêu đề */
+        font-weight: bold;
+        /* Đậm cho tiêu đề */
+        margin-bottom: 10px;
+        /* Khoảng cách dưới tiêu đề */
+    }
+
+    .elementor-icon-box-description {
+        color: #666;
+        /* Màu chữ cho mô tả */
+        font-size: 14px;
+        /* Kích thước chữ cho mô tả */
+        line-height: 1.5;
+        /* Độ cao của dòng cho mô tả */
+    }
+
+    .elementor-icon-box-icon {
+        font-size: 36px;
+        /* Kích thước biểu tượng */
+        color: orange;
+        /* Màu của biểu tượng */
+        margin-bottom: 20px;
+        /* Khoảng cách dưới biểu tượng */
+    }
+
+    .thumbs-up-icon {
+        font-size: 40px;
+        color: gray;
+        /* Màu icon */
+        margin-left: 5px;
+        /* Khoảng cách giữa icon và tiêu đề */
+    }
+
+    .courses-item h4 {
+        color: #333;
+        /* Màu chữ cho tiêu đề */
+    }
+
+    .courses-item p {
+        color: #666;
+        /* Màu chữ cho nội dung */
+    }
 </style>
 
 <body>
@@ -73,17 +131,41 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Trang chủ</a>
-                <a href="about.html" class="nav-item nav-link">Giới thiệu</a>
-                <a href="courses.html" class="nav-item nav-link">Khóa học</a>
+                <a href="index.html" class="nav-item nav-link active"><b style="color: #2b4f65">Trang chủ</b></a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Trang</a>
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b style="color: #2b4f65">Học
+                            lái xe ô tô</b></a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="#" class="dropdown-item">Kiến thức</a>
-                        <a href="#" class="dropdown-item">Dịch vụ</a>
+                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe số tự động B1</b></a>
+                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe số sàn B2</b></a>
+                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe tải hạng C</b></a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Liên hệ</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b style="color: #2b4f65">Học
+                            lái A1-A2</b></a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe máy A1</b></a>
+                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe mô tô A2</b></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b
+                            style="color: #2b4f65">Dịch vụ</b></a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Thuê xe tập lái</b></a>
+                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Bổ túc tay lái thực tiển</b></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b
+                            style="color: #2b4f65">Kiến thức</b></a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Kiến thức lái xe máy</b></a>
+                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Kiến thức lái ô tô</b></a>
+                    </div>
+                </div>
+                <a href="contact.html" class="nav-item nav-link"><b style="color: #2b4f65">Liên hệ</b></a>
             </div>
         </div>
     </nav>
@@ -133,8 +215,48 @@
         </div>
     </div>
 
+    <!-- Thông điệp -->
+    <div class="container-xxl my-6 py-6 pb-0">
+        <div class="container-xxl">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-flex flex-column bg-white border-0 overflow-hidden h-100">
+                            <div class="text-center p-4 pt-0">
+                                <i aria-hidden="true" class="far fa-thumbs-up thumbs-up-icon"></i>
+                                <h4 class="text-dark">CHẤT LƯỢNG ĐÀO TẠO </h4>
+                                <p class="text-secondary">Học phải đi đôi với hành. Bằng kinh nghiệm thực tế chúng tôi
+                                    giúp học viên xử lý tốt các tình huống giao thông thực tế trên đường phố</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="d-flex flex-column bg-white border-0 overflow-hidden h-100">
+                            <div class="text-center p-4 pt-0">
+                                <i aria-hidden="true" class="far fa-thumbs-up thumbs-up-icon"></i>
+                                <h4 class="text-dark">CHUYÊN NGHIỆP TẬN TÌNH </h4>
+                                <p class="text-secondary">Giáo viên của chúng tôi là những người thầy kinh nghiệm, có
+                                    phương pháp sư phạm và khả năng truyền đạt tốt</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="d-flex flex-column bg-white border-0 overflow-hidden h-100">
+                            <div class="text-center p-4 pt-0">
+                                <i aria-hidden="true" class="far fa-thumbs-up thumbs-up-icon"></i>
+                                <h4 class="text-dark">AN TOÀN HIỆN ĐẠI </h4>
+                                <p class="text-secondary">Phòng học lý thuyết đầy đủ trang thiết bị. Học thực hành trên
+                                    xe đời mới, máy lạnh tạo sự thoải mái, phấn khởi cho học viên</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div class="container-fluid facts py-5 pt-lg-0">
+    <!-- END Thông điệp -->
+    <!-- <div class="container-fluid facts py-5 pt-lg-0">
         <div class="container py-5 pt-lg-0">
             <div class="row gx-0">
                 <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
@@ -178,25 +300,28 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
     <!-- Courses Start -->
     <div class="container-xxl courses my-6 py-6 pb-0">
-
-        <div class="container-xxl">
+        <div class="container-xl">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                    <h6 class="text-primary text-uppercase mb-2">Khóa Học Nổi Bậc</h6>
-                    <h1 class="display-6 mb-4">Các khóa học của chúng tôi nâng cao kỹ năng lái xe cho bạn</h1>
+                <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <h2 class="text-primary text-uppercase mb-4">Dịch Vụ Nổi Bậc</h2>
+                    <i class="fas fa-car fa-3x" style="color:red;"></i>
                 </div>
+
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
                             <div class="text-center p-4 pt-0">
-                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">12.000.000 VNĐ
+                                <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">KHOÁ HỌC LÁI XE SỐ
+                                    TỰ
+                                    ĐỘNG
+                                    B1
                                 </div>
-                                <h5 class="mb-3">Bằng B1</h5>
+                                <!-- <h5 class="mb-3">Bằng B1</h5>
                                 <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
                                 <ol class="breadcrumb justify-content-center mb-0">
                                     <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
@@ -206,7 +331,7 @@
                                     <li class="breadcrumb-item small"><i
                                             class="fa fa-calendar-alt text-primary me-2"></i>3
                                         tháng</li>
-                                </ol>
+                                </ol> -->
                             </div>
                             <div class="position-relative mt-auto">
                                 <img class="img-fluid" src="img/about-1.jpg" alt="">
@@ -219,9 +344,10 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                         <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
                             <div class="text-center p-4 pt-0">
-                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">12.000.000 VNĐ
+                                <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">KHOÁ HỌC LÁI XE Ô TÔ
+                                    B2
                                 </div>
-                                <h5 class="mb-3">Bằng B2</h5>
+                                <!-- <h5 class="mb-3">Bằng B1</h5>
                                 <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
                                 <ol class="breadcrumb justify-content-center mb-0">
                                     <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
@@ -231,10 +357,10 @@
                                     <li class="breadcrumb-item small"><i
                                             class="fa fa-calendar-alt text-primary me-2"></i>3
                                         tháng</li>
-                                </ol>
+                                </ol> -->
                             </div>
                             <div class="position-relative mt-auto">
-                                <img class="img-fluid" src="img/about-1.jpg" alt="">
+                                <img class="img-fluid" src="img/about-4.jpg" alt="">
                                 <div class="courses-overlay">
                                     <a class="btn btn-outline-primary border-2" href="page/B1.html">Xem thêm</a>
                                 </div>
@@ -244,9 +370,11 @@
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
                             <div class="text-center p-4 pt-0">
-                                <div class="d-inline-block bg-primary text-white fs-5 py-1 px-4 mb-4">12.000.000 VNĐ
+                                <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">KHOÁ HỌC LÁI XE TẢI
+                                    HẠNG
+                                    C
                                 </div>
-                                <h5 class="mb-3">Bằng C1</h5>
+                                <!-- <h5 class="mb-3">Bằng B1</h5>
                                 <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
                                 <ol class="breadcrumb justify-content-center mb-0">
                                     <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
@@ -256,10 +384,87 @@
                                     <li class="breadcrumb-item small"><i
                                             class="fa fa-calendar-alt text-primary me-2"></i>3
                                         tháng</li>
-                                </ol>
+                                </ol> -->
                             </div>
                             <div class="position-relative mt-auto">
-                                <img class="img-fluid" src="img/about-1.jpg" alt="">
+                                <img class="img-fluid" src="img/about-6.jpg" alt="">
+                                <div class="courses-overlay">
+                                    <a class="btn btn-outline-primary border-2" href="page/B1.html">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
+                            <div class="text-center p-4 pt-0">
+                                <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">KHOÁ HỌC LÁI XE MÔ
+                                    TÔ A2
+                                </div>
+                                <!-- <h5 class="mb-3">Bằng B1</h5>
+                                <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
+                                <ol class="breadcrumb justify-content-center mb-0">
+                                    <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
+                                        cho
+                                        người mới
+                                    </li>
+                                    <li class="breadcrumb-item small"><i
+                                            class="fa fa-calendar-alt text-primary me-2"></i>3
+                                        tháng</li>
+                                </ol> -->
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img class="img-fluid" src="img/about-7.jpg" alt="">
+                                <div class="courses-overlay">
+                                    <a class="btn btn-outline-primary border-2" href="page/B1.html">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
+                            <div class="text-center p-4 pt-0">
+                                <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">CHO THUÊ XE TẬP LÁI
+                                </div>
+                                <!-- <h5 class="mb-3">Bằng B1</h5>
+                                <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
+                                <ol class="breadcrumb justify-content-center mb-0">
+                                    <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
+                                        cho
+                                        người mới
+                                    </li>
+                                    <li class="breadcrumb-item small"><i
+                                            class="fa fa-calendar-alt text-primary me-2"></i>3
+                                        tháng</li>
+                                </ol> -->
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img class="img-fluid" src="img/about-8.jpg" alt="">
+                                <div class="courses-overlay">
+                                    <a class="btn btn-outline-primary border-2" href="page/B1.html">Xem thêm</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="courses-item d-flex flex-column bg-white overflow-hidden h-100">
+                            <div class="text-center p-4 pt-0">
+                                <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">KHOÁ HỌC LÁI XE MÁY
+                                    A1
+                                </div>
+                                <!-- <h5 class="mb-3">Bằng B1</h5>
+                                <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
+                                <ol class="breadcrumb justify-content-center mb-0">
+                                    <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
+                                        cho
+                                        người mới
+                                    </li>
+                                    <li class="breadcrumb-item small"><i
+                                            class="fa fa-calendar-alt text-primary me-2"></i>3
+                                        tháng</li>
+                                </ol> -->
+                            </div>
+                            <div class="position-relative mt-auto">
+                                <img class="img-fluid" src="img/about-5.jpg" alt="">
                                 <div class="courses-overlay">
                                     <a class="btn btn-outline-primary border-2" href="page/B1.html">Xem thêm</a>
                                 </div>
@@ -267,7 +472,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-8 my-6 mb-0 wow fadeInUp" style="background-color: #dee8ee;"
+                    <!-- <div class="col-lg-8 my-6 mb-0 wow fadeInUp" style="background-color: #dee8ee;"
                         data-wow-delay="0.1s">
                         <div class=" text-center p-5">
                             <h1 class="mb-4">Đăng ký học</h1>
@@ -314,13 +519,13 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-
     </div>
     <!-- Courses End -->
+
 
     <!-- Features Start -->
     <div class="container-xxl py-6">
@@ -329,7 +534,9 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="text-primary text-uppercase mb-2">Tại sao phải chọn chúng tôi!</h6>
                     <h1 class="display-6 mb-4">Cơ Sở Đào Tạo Lái Xe Tốt Nhất Tại Trà Vinh</h1>
-                    <p class="mb-5">Chúng tôi tự hào là cở sở dạy lái xe tốt nhất tại Trà Vinh. Học viên là sự ưu tiên
+                    <p class="mb-5">Chúng tôi tự hào là cở sở dạy lái xe tốt nhất tại Trà Vinh. Học viên là sự
+                        ưu
+                        tiên
                         hàng đầu của chúng tôi.
                     <div class="row gy-5 gx-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
@@ -372,7 +579,7 @@
                 </div>
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="position-relative overflow-hidden pe-5 pt-5 h-100" style="min-height: 400px;">
-                        <img class="position-absolute w-100 h-100" src="img/about-1.jpg" alt=""
+                        <img class="position-absolute w-100 h-100" src="img/about-3.jpg" alt=""
                             style="object-fit: cover;">
                         <img class="position-absolute top-0 end-0 bg-white ps-3 pb-3" src="img/about-2.jpg" alt=""
                             style="width: 200px; height: 200px">
