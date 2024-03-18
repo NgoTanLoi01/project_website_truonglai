@@ -2,7 +2,6 @@
     --heading-font: "Literata", sans-serif;*/
 body,
 p {
-    font-family: "Inter", sans-serif;
     line-height: 26px;
     font-size: 17px;
 }
@@ -195,8 +194,6 @@ h5,
 h6 {
     color: var(--first-color);
     font-weight: 700;
-    /* font-family: 'Montserrat', sans-serif;*/
-    font-family: "Inter", sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased !important;
 }
@@ -695,4 +692,206 @@ ul.navbar-nav>li>a {
     #call {
         right: 15px;
     }
+}
+
+.courses-item {
+    border-radius: 10px;
+    /* Đặt bán kính cho việc làm tròn các góc thành 10px */
+    overflow: hidden;
+    /* Đảm bảo hình ảnh không vượt ra khỏi phần tử sau khi làm tròn góc */
+    background-color: #2b4f65 !important;
+}
+
+/* Nếu bạn muốn làm tròn các góc của nút "Xem thêm" */
+.courses-overlay .btn {
+    border-radius: 5px;
+    /* Đặt bán kính cho việc làm tròn các góc của nút thành 5px */
+}
+
+.elementor-icon-box-title {
+    color: #333;
+    /* Màu chữ cho tiêu đề */
+    font-size: 18px;
+    /* Kích thước chữ cho tiêu đề */
+    font-weight: bold;
+    /* Đậm cho tiêu đề */
+    margin-bottom: 10px;
+    /* Khoảng cách dưới tiêu đề */
+}
+
+.elementor-icon-box-description {
+    color: #666;
+    /* Màu chữ cho mô tả */
+    font-size: 14px;
+    /* Kích thước chữ cho mô tả */
+    line-height: 1.5;
+    /* Độ cao của dòng cho mô tả */
+}
+
+.elementor-icon-box-icon {
+    font-size: 36px;
+    /* Kích thước biểu tượng */
+    color: orange;
+    /* Màu của biểu tượng */
+    margin-bottom: 20px;
+    /* Khoảng cách dưới biểu tượng */
+}
+
+.thumbs-up-icon {
+    font-size: 40px;
+    color: gray;
+    /* Màu icon */
+    margin-left: 5px;
+    /* Khoảng cách giữa icon và tiêu đề */
+}
+
+.courses-item h4 {
+    color: #333;
+    /* Màu chữ cho tiêu đề */
+}
+
+.courses-item p {
+    color: #666;
+    /* Màu chữ cho nội dung */
+}
+
+.icon-link {
+    list-style-type: none;
+    /* loại bỏ dấu chấm */
+    margin: 10px;
+    /* khoảng cách dưới giữa mỗi mục */
+}
+
+/* Định dạng label */
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Định dạng input */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Định dạng nút Gửi liên hệ */
+.btn-primary {
+    background-color: #2b4f65;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e3a4c;
+}
+
+/* Định dạng các lỗi */
+.error-container {
+    color: #ed1c24;
+    margin-bottom: 10px;
+}
+
+.contact-form-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng box chứa biểu mẫu */
+.contact-form-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    /* Điều chỉnh kích thước của hộp */
+    margin: auto;
+    /* Để căn giữa */
+}
+
+/* Định dạng nút Gửi liên hệ */
+.btn-primary {
+    display: block;
+    width: 100%;
+    background-color: #2b4f65;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1e3a4c;
+}
+
+/* Định dạng box chứa phần tử */
+.elementor-column-wrap {
+    width: 100vw;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    background-color: #dee8ee;
+}
+
+/* Định dạng biểu tượng phân cách */
+.elementor-divider__element svg {
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    fill: #ed1c24;
+}
+
+/* Định dạng tiêu đề */
+.elementor-heading-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ed1c24;
+    text-align: center;
+}
+
+/* Định dạng đường phân cách */
+.elementor-divider {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Định dạng nút Gửi liên hệ */
+.elementor-button {
+    display: block;
+    width: 100%;
+    background-color: #2b4f65;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.elementor-button:hover {
+    background-color: #1e3a4c;
 }

@@ -2,7 +2,6 @@
     --heading-font: "Literata", sans-serif;*/
 body,
 p {
-    font-family: "Inter", sans-serif;
     line-height: 26px;
     font-size: 17px;
 }
@@ -195,8 +194,6 @@ h5,
 h6 {
     color: var(--first-color);
     font-weight: 700;
-    /* font-family: 'Montserrat', sans-serif;*/
-    font-family: "Inter", sans-serif;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased !important;
 }

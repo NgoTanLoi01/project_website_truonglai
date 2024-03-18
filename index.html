@@ -24,69 +24,6 @@
     <link href="css/typography.scss" rel="stylesheet">
 </head>
 
-<style>
-    .courses-item {
-        border-radius: 10px;
-        /* Đặt bán kính cho việc làm tròn các góc thành 10px */
-        overflow: hidden;
-        /* Đảm bảo hình ảnh không vượt ra khỏi phần tử sau khi làm tròn góc */
-        background-color: #2b4f65 !important;
-    }
-
-    /* Nếu bạn muốn làm tròn các góc của nút "Xem thêm" */
-    .courses-overlay .btn {
-        border-radius: 5px;
-        /* Đặt bán kính cho việc làm tròn các góc của nút thành 5px */
-    }
-
-    .elementor-icon-box-title {
-        color: #333;
-        /* Màu chữ cho tiêu đề */
-        font-size: 18px;
-        /* Kích thước chữ cho tiêu đề */
-        font-weight: bold;
-        /* Đậm cho tiêu đề */
-        margin-bottom: 10px;
-        /* Khoảng cách dưới tiêu đề */
-    }
-
-    .elementor-icon-box-description {
-        color: #666;
-        /* Màu chữ cho mô tả */
-        font-size: 14px;
-        /* Kích thước chữ cho mô tả */
-        line-height: 1.5;
-        /* Độ cao của dòng cho mô tả */
-    }
-
-    .elementor-icon-box-icon {
-        font-size: 36px;
-        /* Kích thước biểu tượng */
-        color: orange;
-        /* Màu của biểu tượng */
-        margin-bottom: 20px;
-        /* Khoảng cách dưới biểu tượng */
-    }
-
-    .thumbs-up-icon {
-        font-size: 40px;
-        color: gray;
-        /* Màu icon */
-        margin-left: 5px;
-        /* Khoảng cách giữa icon và tiêu đề */
-    }
-
-    .courses-item h4 {
-        color: #333;
-        /* Màu chữ cho tiêu đề */
-    }
-
-    .courses-item p {
-        color: #666;
-        /* Màu chữ cho nội dung */
-    }
-</style>
-
 <body>
 
     <div id="spinner"
@@ -95,26 +32,30 @@
     </div>
     <div class="container-fluid bg-dark text-light p-0">
         <div class="row gx-0 d-none d-lg-flex">
-            <div class="col-lg-7 px-5 text-start">
+            <div class="col-lg-5 px-5 text-start">
                 <div class="h-100 d-inline-flex align-items-center me-4">
                     <small class="fa fa-map-marker-alt text-primary me-2"></small>
                     <small>Tỉnh Trà Vinh, Việt Nam</small>
                 </div>
                 <div class="h-100 d-inline-flex align-items-center">
                     <small class="far fa-clock text-primary me-2"></small>
-                    <small>Thứ 2 - thứ 7 : 09.00 sáng - 09.00 tối</small>
+                    <small>Đặt lịch hẹn</small>
                 </div>
             </div>
-            <div class="col-lg-5 px-5 text-end">
+            <div class="col-lg-7 px-5 text-end">
                 <div class="h-100 d-inline-flex align-items-center me-4">
-                    <small class="fa fa-phone-alt text-primary me-2"></small>
-                    <small>0903.336.470</small>
-                </div>
-                <div class="h-100 d-inline-flex align-items-center mx-n2">
-                    <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary"
-                        href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-link rounded-0" href="https://nguyentrinh40@yahoo.com"><i
-                            class="fab fa fa-envelope"></i></a>
+                    <li class="icon-link">
+                        <a href="tel:0903336470">
+                            <img src="/img/icon/icon-call.png"> 0903.336.470</a>
+                    </li>
+                    <li class="icon-link">
+                        <a href="tel:0903336470">
+                            <img src="/img/icon/icon-email.png"> nguyentrinh40@yahoo.com </a>
+                    </li>
+                    <li class="icon-link">
+                        <a href="tel:0903336470">
+                            <img src="/img/icon/icon-face.png"> Fb.com/nguyentrinhtravinh</a>
+                    </li>
                 </div>
             </div>
         </div>
@@ -131,41 +72,48 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active"><b style="color: #2b4f65">Trang chủ</b></a>
+                <a href="index.html" class="nav-item nav-link active"><strong style="color: #2b4f65">Trang
+                        chủ</strong></a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b style="color: #2b4f65">Học
-                            lái xe ô tô</b></a>
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><strong style="color: #2b4f65">Học lái xe ô tô</strong></a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe số tự động B1</b></a>
-                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe số sàn B2</b></a>
-                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe tải hạng C</b></a>
+                        <a href="page/B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe số tự động
+                                B1</strong></a>
+                        <a href="page/B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe số sàn
+                                B2</strong></a>
+                        <a href="page/B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe tải hạng
+                                C</strong></a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b style="color: #2b4f65">Học
-                            lái A1-A2</b></a>
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><strong style="color: #2b4f65">Học lái A1-A2</strong></a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe máy A1</b></a>
-                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Học lái xe mô tô A2</b></a>
+                        <a href="page/B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe máy A1</strong></a>
+                        <a href="page/B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe mô tô
+                                A2</strong></a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b
-                            style="color: #2b4f65">Dịch vụ</b></a>
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><strong style="color: #2b4f65">Dịch vụ</strong></a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Thuê xe tập lái</b></a>
-                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Bổ túc tay lái thực tiển</b></a>
+                        <a href="page/thuexe.html" class="dropdown-item"><strong style="color: #2b4f65">Thuê xe tập lái</strong></a>
+                        <a href="page/thuexe.html" class="dropdown-item"><strong style="color: #2b4f65">Bổ túc tay lái thực
+                                tiển</strong></a>
                     </div>
                 </div>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"><b
-                            style="color: #2b4f65">Kiến thức</b></a>
+                    <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false"><strong style="color: #2b4f65">Kiến thức</strong></a>
                     <div class="dropdown-menu bg-light m-0">
-                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Kiến thức lái xe máy</b></a>
-                        <a href="#" class="dropdown-item"><b style="color: #2b4f65">Kiến thức lái ô tô</b></a>
+                        <a href="page/kienthuc.html" class="dropdown-item"><strong style="color: #2b4f65">Kiến thức lái xe
+                                máy</strong></a>
+                        <a href="page/kienthuc.html" class="dropdown-item"><strong style="color: #2b4f65">Kiến thức lái ô tô</strong></a>
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link"><b style="color: #2b4f65">Liên hệ</b></a>
+                <a href="contact.html" class="nav-item nav-link"><strong style="color: #2b4f65">Liên hệ</strong></a>
             </div>
         </div>
     </nav>
@@ -254,62 +202,13 @@
             </div>
         </div>
     </div>
-
-    <!-- END Thông điệp -->
-    <!-- <div class="container-fluid facts py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa fa-car text-white"></i>
-                            </div>
-                            <div class="ps-4">
-                                <h5>Học lái xe thật dễ dàng </h5>
-                                <span>Học ngay</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa fa-users text-white"></i>
-                            </div>
-                            <div class="ps-4">
-                                <h5>Giảng viên giàu kinh nghiệm</h5>
-                                <span>Học ngay</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white shadow d-flex align-items-center h-100 p-4" style="min-height: 150px;">
-                        <div class="d-flex">
-                            <div class="flex-shrink-0 btn-lg-square bg-primary">
-                                <i class="fa fa-file-alt text-white"></i>
-                            </div>
-                            <div class="ps-4">
-                                <h5>Hồ sơ đăng ký dễ dàng</h5>
-                                <span>Học ngay</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-
     <!-- Courses Start -->
-    <div class="container-xxl courses my-6 py-6 pb-0">
+    <div class="container-xxl my-6 py-6 pb-0">
         <div class="container-xl">
             <div class="container">
                 <div class="text-center mx-auto mb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                     <h2 class="text-primary text-uppercase mb-4">Dịch Vụ Nổi Bậc</h2>
-                    <i class="fas fa-car fa-3x" style="color:red;"></i>
+                    <i class="fas fa-car fa-3x" style="color:#ed1c24;"></i>
                 </div>
 
                 <div class="row g-4 justify-content-center">
@@ -321,17 +220,6 @@
                                     ĐỘNG
                                     B1
                                 </div>
-                                <!-- <h5 class="mb-3">Bằng B1</h5>
-                                <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
-                                <ol class="breadcrumb justify-content-center mb-0">
-                                    <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
-                                        cho
-                                        người mới
-                                    </li>
-                                    <li class="breadcrumb-item small"><i
-                                            class="fa fa-calendar-alt text-primary me-2"></i>3
-                                        tháng</li>
-                                </ol> -->
                             </div>
                             <div class="position-relative mt-auto">
                                 <img class="img-fluid" src="img/about-1.jpg" alt="">
@@ -347,17 +235,6 @@
                                 <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">KHOÁ HỌC LÁI XE Ô TÔ
                                     B2
                                 </div>
-                                <!-- <h5 class="mb-3">Bằng B1</h5>
-                                <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
-                                <ol class="breadcrumb justify-content-center mb-0">
-                                    <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
-                                        cho
-                                        người mới
-                                    </li>
-                                    <li class="breadcrumb-item small"><i
-                                            class="fa fa-calendar-alt text-primary me-2"></i>3
-                                        tháng</li>
-                                </ol> -->
                             </div>
                             <div class="position-relative mt-auto">
                                 <img class="img-fluid" src="img/about-4.jpg" alt="">
@@ -374,17 +251,6 @@
                                     HẠNG
                                     C
                                 </div>
-                                <!-- <h5 class="mb-3">Bằng B1</h5>
-                                <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
-                                <ol class="breadcrumb justify-content-center mb-0">
-                                    <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
-                                        cho
-                                        người mới
-                                    </li>
-                                    <li class="breadcrumb-item small"><i
-                                            class="fa fa-calendar-alt text-primary me-2"></i>3
-                                        tháng</li>
-                                </ol> -->
                             </div>
                             <div class="position-relative mt-auto">
                                 <img class="img-fluid" src="img/about-6.jpg" alt="">
@@ -400,17 +266,6 @@
                                 <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">KHOÁ HỌC LÁI XE MÔ
                                     TÔ A2
                                 </div>
-                                <!-- <h5 class="mb-3">Bằng B1</h5>
-                                <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
-                                <ol class="breadcrumb justify-content-center mb-0">
-                                    <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
-                                        cho
-                                        người mới
-                                    </li>
-                                    <li class="breadcrumb-item small"><i
-                                            class="fa fa-calendar-alt text-primary me-2"></i>3
-                                        tháng</li>
-                                </ol> -->
                             </div>
                             <div class="position-relative mt-auto">
                                 <img class="img-fluid" src="img/about-7.jpg" alt="">
@@ -425,17 +280,6 @@
                             <div class="text-center p-4 pt-0">
                                 <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">CHO THUÊ XE TẬP LÁI
                                 </div>
-                                <!-- <h5 class="mb-3">Bằng B1</h5>
-                                <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
-                                <ol class="breadcrumb justify-content-center mb-0">
-                                    <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
-                                        cho
-                                        người mới
-                                    </li>
-                                    <li class="breadcrumb-item small"><i
-                                            class="fa fa-calendar-alt text-primary me-2"></i>3
-                                        tháng</li>
-                                </ol> -->
                             </div>
                             <div class="position-relative mt-auto">
                                 <img class="img-fluid" src="img/about-8.jpg" alt="">
@@ -451,17 +295,6 @@
                                 <div class="d-inline-block  text-white fs-5 py-1 px-4 mb-4">KHOÁ HỌC LÁI XE MÁY
                                     A1
                                 </div>
-                                <!-- <h5 class="mb-3">Bằng B1</h5>
-                                <p>Khóa học sẽ giúp cho bạn thành thạo kỹ năng lái xe. Hãy đăng ký ngay!</p>
-                                <ol class="breadcrumb justify-content-center mb-0">
-                                    <li class="breadcrumb-item small"><i class="fa fa-signal text-primary me-2"></i>Dành
-                                        cho
-                                        người mới
-                                    </li>
-                                    <li class="breadcrumb-item small"><i
-                                            class="fa fa-calendar-alt text-primary me-2"></i>3
-                                        tháng</li>
-                                </ol> -->
                             </div>
                             <div class="position-relative mt-auto">
                                 <img class="img-fluid" src="img/about-5.jpg" alt="">
@@ -471,55 +304,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <!-- <div class="col-lg-8 my-6 mb-0 wow fadeInUp" style="background-color: #dee8ee;"
-                        data-wow-delay="0.1s">
-                        <div class=" text-center p-5">
-                            <h1 class="mb-4">Đăng ký học</h1>
-                            <form>
-                                <div class="row g-3">
-                                    <div class="col-sm-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control border-1 " id="gname"
-                                                placeholder="Gurdian Name">
-                                            <label for="gname">Họ và tên</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-floating">
-                                            <input type="email" class="form-control border-1" id="gmail"
-                                                placeholder="Gurdian Email">
-                                            <label for="gmail">Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control border-1" id="cname"
-                                                placeholder="Child Name">
-                                            <label for="cname">Loại khóa học</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control border-1" id="cage"
-                                                placeholder="Child Age">
-                                            <label for="cage">Loại xe</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control border-1" placeholder="Leave a message here"
-                                                id="message" style="height: 100px"></textarea>
-                                            <label for="message">Ghi chú</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <button class="btn btn-dark w-100 py-3" type="submit">Đăng ký</button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -527,12 +311,155 @@
     <!-- Courses End -->
 
 
-    <!-- Features Start -->
+
+    <div class="elementor-column-wrap elementor-element-populated">
+        <div class="elementor-widget-wrap">
+            <div class="elementor-element elementor-element-f3cfecc elementor-widget elementor-widget-spacer"
+                data-id="f3cfecc" data-element_type="widget" data-widget_type="spacer.default">
+                <div class="elementor-widget-container">
+                    <div class="elementor-spacer">
+                        <div class="elementor-spacer-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-42c0ca7 elementor-widget elementor-widget-heading"
+                data-id="42c0ca7" data-element_type="widget" data-widget_type="heading.default">
+                <div class="elementor-widget-container">
+                    <h2 class="elementor-heading-title elementor-size-default">Đăng ký học ngay</h2>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-fd1212c elementor-widget-divider--view-line_icon elementor-widget-divider--separator-type-pattern elementor-view-default elementor-widget-divider--element-align-center elementor-widget elementor-widget-divider"
+                data-id="fd1212c" data-element_type="widget" data-widget_type="divider.default">
+                <div class="elementor-widget-container">
+                    <div class="elementor-divider"
+                        style="--divider-pattern-url: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='none' overflow='visible' height='100%' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='1' stroke-linecap='square' stroke-miterlimit='10'%3E%3Cpolyline points='0,18 12,6 24,18 '/%3E%3C/svg%3E&quot;);">
+                        <span class="elementor-divider-separator">
+                            <div class="elementor-icon elementor-divider__element">
+                                <!--?xml version="1.0" encoding="iso-8859-1"?-->
+                                <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.844,0,0,114.844,0,256s114.844,256,256,256s256-114.844,256-256S397.156,0,256,0z M178.052,431.521
+c-54.656-24.271-94.781-72.406-108.729-130.427c28.427-27.323,74.073-31,106.313-9.24c5.708,13.969,16.156,26.219,29.865,35.031
+c5.198,11.219,7.833,23.24,7.833,35.781C213.333,390.073,200.24,415.427,178.052,431.521z M191.26,213.323l-122.677,0.01
+C87.875,126.896,166.323,63.177,256,63.177c88.885,0,167.198,63.74,187.115,150.198H320.792C305.052,199.74,281.729,192,256,192
+C230.292,192,207,199.719,191.26,213.323z M333.948,431.521c-22.188-16.094-35.281-41.448-35.281-68.854
+c0-12.552,2.635-24.583,7.854-35.792c13.688-8.813,24.125-21.063,29.833-35.01c32.188-21.76,77.865-18.104,106.323,9.229
+C428.729,359.115,388.604,407.25,333.948,431.521z"></path>
+                                        </g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-7836b3f elementor-widget elementor-widget-spacer"
+                data-id="7836b3f" data-element_type="widget" data-widget_type="spacer.default">
+                <div class="elementor-widget-container">
+                    <div class="elementor-spacer">
+                        <div class="elementor-spacer-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form liên hệ -->
     <div class="container-xxl py-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-form-box">
+                        <h3 style="text-align: center;">ĐĂNG KÝ TƯ VẤN</h3>
+                        <form id="contact-form" action="" method="post" role="form">
+                            <div class="error-container"></div>
+                            <label for="email">Họ và tên</label>
+                            <div class="form-group">
+                                <input class="form-control" name="name" id="name" placeholder="Họ và tên" type="text"
+                                    required="">
+                            </div>
+                            <label for="email">Email</label>
+                            <div class="form-group">
+                                <input class="form-control" name="phone" id="phone" placeholder="Số điện thoại"
+                                    type="tel" required="">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Nội dung</label>
+                                <input class="form-control" name="" id="" placeholder="Nội dung" type="text">
+                            </div>
+
+                            <!-- Thêm checkbox I'm not a robot -->
+                            <div class="form-group form-check">
+                                <div id="cf7sr-65f84270ccaee" class="cf7sr-g-recaptcha"
+                                    data-sitekey="6LffHkkfAAAAAI8cHw5lbLhcw3ZLnFEaIpbSMJic">
+                                    <div style="width: 304px; height: 78px;">
+                                        <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation"
+                                                name="a-9m6kiqtqlu0p" frameborder="0" scrolling="no"
+                                                sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                                src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LffHkkfAAAAAI8cHw5lbLhcw3ZLnFEaIpbSMJic&amp;co=aHR0cHM6Ly90cnVvbmdkYXlsYWl4ZS52bjo0NDM.&amp;hl=en&amp;v=YurWEBlMIwR4EqFPncmQTkxQ&amp;size=normal&amp;cb=n072qdwiqsn2"></iframe>
+                                        </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                            class="g-recaptcha-response"
+                                            style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                    </div><iframe style="display: none;"></iframe>
+                                </div>
+                            </div>
+
+                            <!-- Button liên hệ nằm ở giữa -->
+                            <div class="text-center">
+                                <button class="btn btn-primary solid blank" type="submit">Gửi liên hệ</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                        <h3 class="text-primary text-uppercase mb-2">PHẢN HỒI HỌC VIÊN</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Form liên hệ -->
+    <!-- Features Start -->
+    <!-- <div class="container-xxl py-6">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="text-primary text-uppercase mb-2">Tại sao phải chọn chúng tôi!</h6>
                     <h1 class="display-6 mb-4">Cơ Sở Đào Tạo Lái Xe Tốt Nhất Tại Trà Vinh</h1>
                     <p class="mb-5">Chúng tôi tự hào là cở sở dạy lái xe tốt nhất tại Trà Vinh. Học viên là sự
                         ưu
@@ -587,16 +514,32 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Features End -->
+
+    <div class="elementor-column-wrap elementor-element-populated">
+        <div class="elementor-widget-wrap">
+            <div class="elementor-element elementor-element-f3cfecc elementor-widget elementor-widget-spacer"
+                data-id="f3cfecc" data-element_type="widget" data-widget_type="spacer.default">
+                <div class="elementor-widget-container">
+                    <div class="elementor-spacer">
+                        <div class="elementor-spacer-inner"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="elementor-element elementor-element-42c0ca7 elementor-widget elementor-widget-heading"
+                data-id="42c0ca7" data-element_type="widget" data-widget_type="heading.default">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                    <h6 class="text-primary text-uppercase mb-2">Thông tin giảng viên</h6>
+                    <h1 class="display-6 mb-4">Đội ngủ giảng viên đầy kinh nghiệm</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Team Start -->
     <div class="container-xxl py-6">
         <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <h6 class="text-primary text-uppercase mb-2">Thông tin giảng viên</h6>
-                <h1 class="display-6 mb-4">Đội ngủ giảng viên đầy kinh nghiệm</h1>
-            </div>
             <div class="row g-0 team-items">
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative">
@@ -693,7 +636,7 @@
                     <div class="col-lg-8">
                         <div class="ts-newsletter row align-items-center">
                             <div class="col-md-5 newsletter-introtext">
-                                <h3 class="text-red mb-0">YÊU CẦU TƯ VẤN</h3>
+                                <h3 class="text-red mb-0">ĐĂNG KÝ TƯ VẤN</h3>
                                 <p class="text-dark">Để lại số điện thoại chúng tôi sẽ liên hệ bạn</p>
                             </div>
 
@@ -703,7 +646,7 @@
                                         <input type="text" name="phone" id="newsletter-phone"
                                             class="form-control form-control-lg"
                                             placeholder="Nhập số điện thoại và Enter..." autocomplete="off">
-                                    </div>
+                                    </div><br>
                                 </form>
                             </div>
                         </div>
