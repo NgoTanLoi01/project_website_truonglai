@@ -895,3 +895,29 @@ textarea {
 .elementor-button:hover {
     background-color: #1e3a4c;
 }
+
+.circle-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #6ec1e4;
+    border-radius: 60%;
+    margin: 0 auto;
+    /* Canh giữa theo chiều ngang */
+    margin-bottom: 20px;
+    /* Khoảng cách giữa icon và form */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-icon i {
+    color: white;
+}
+
+.box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: 6ec1e4;
+}
