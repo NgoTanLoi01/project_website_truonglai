@@ -1,0 +1,56 @@
+.content-item {
+    border: 1px solid #d2d2d2; /* Border cho khung bao quanh */
+    border-radius: 5px; /* Bo tròn viền */
+    margin-bottom: 20px; /* Khoảng cách giữa các nội dung */
+}
+
+.content-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Hiệu ứng nổi lên khi rê chuột vào */
+}
+
+.box_news .image_boder img:hover {
+    transform: scale(1.1); /* Hiệu ứng phóng to khi rê chuột vào */
+}
+.box_news {
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn chỉnh theo chiều dọc */
+}
+
+.box_news .image_boder {
+    width: 120px; /* Kích thước của ảnh */
+    height: 80px;
+    margin-right: 10px; /* Khoảng cách giữa ảnh và nội dung */
+}
+
+.box_news .image_boder img {
+    width: 100%; /* Đảm bảo ảnh chiếm toàn bộ kích thước của khung */
+    height: 100%;
+    border: 1px solid #d2d2d2;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box_news .content_box {
+    flex: 1; /* Nội dung sẽ mở rộng để điền vào không gian còn trống */
+}
+
+.box_news:hover .image_boder img {
+    transform: scale(1.1);
+}
+
+p{
+    font-size: 15px;
+}
+.background_xanh {
+    display: flex; /* Sử dụng flexbox */
+    flex-wrap: nowrap; /* Không cho các phần tử tự động xuống dòng */
+}
+
+.content-item {
+    flex: 1; /* Căn chỉnh tỷ lệ của nội dung để chúng có cùng chiều rộng */
+    margin-right: 2rem; /* Khoảng cách giữa các nội dung */
+}
+
+.content-item:last-child {
+    margin-right: 0; /* Loại bỏ margin phải của nội dung cuối cùng */
+}

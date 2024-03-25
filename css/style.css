@@ -227,11 +227,11 @@
 
 /*** Team ***/
 .team-items {
-    margin: -.75rem;
+    margin: -.4rem;
 }
 
 .team-item {
-    padding: .75rem;
+    padding: .4rem;
 }
 
 .team-item::after {
@@ -3831,4 +3831,8 @@ label {
 .error-page .error-body .btn {
   margin-top: 30px;
   font-weight: 700;
+}
+.image-hover:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
