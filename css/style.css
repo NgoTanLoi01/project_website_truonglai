@@ -2958,7 +2958,7 @@ img.testimonial-thumb {
 }
 
 .banner-title {
-  color: #2b4f65;
+  color: whitesmoke;
   text-transform: uppercase;
   font-size: 58px;
   font-weight: 900;
@@ -3004,7 +3004,7 @@ img.testimonial-thumb {
 .breadcrumb .breadcrumb-item,
 .breadcrumb li a:focus,
 .breadcrumb li a:hover {
-  color: #60727b !important;
+  color: whitesmoke !important;
 }
 
 .breadcrumb .breadcrumb-item + .breadcrumb-item::before {
