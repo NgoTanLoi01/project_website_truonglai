@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dạy lái xe - Nguyễn Trình</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="img/favicon.ico" rel="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/common.scss" rel="stylesheet">
+    <link href="../css/main.scss" rel="stylesheet">
+    <link href="../css/theme.css" rel="stylesheet">
+    <link href="../css/navigation.css" rel="stylesheet">
+    <link href="../css/typography.scss" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <div class="container-fluid bg-dark text-light p-0">
+        <div class="row gx-0 d-none d-lg-flex">
+            <div class="col-lg-5 px-5 text-start">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <small class="fa fa-map-marker-alt text-primary me-2"></small>
+                    <small>Tỉnh Trà Vinh, Việt Nam</small>
+                </div>
+            </div>
+            <div class="col-lg-7 px-5 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <li class="icon-link">
+                        <a href="tel:0903336470">
+                            <img src="/img/icon/icon-call.png"> 0903.336.470</a>
+                    </li>
+                    <li class="icon-link">
+                        <a href="tel:0903336470">
+                            <img src="/img/icon/icon-email.png"> nguyentrinh40@yahoo.com </a>
+                    </li>
+                    <li class="icon-link">
+                        <a href="tel:0903336470">
+                            <img src="/img/icon/icon-face.png"> Fb.com/nguyentrinhtravinh</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+            <img src="/img/logo_nguyentrinh.png" alt="" style="width: 80px;">
+            <h4 class="m-0 text-center">Trung tâm đào tạo và <br>sát hạch lái xe Nguyễn Trình</h4>
+        </a>
+
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="../index.html" class="nav-item nav-link active"><strong style="color: #2b4f65">Trang
+                        chủ</strong></a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link  " role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong
+                            style="color: #2b4f65">Học lái xe ô tô</strong></a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe số tự động
+                                B1</strong></a>
+                        <a href="B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe số sàn
+                                B2</strong></a>
+                        <a href="B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe tải hạng
+                                C</strong></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link  " role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong
+                            style="color: #2b4f65">Học lái A1-A2</strong></a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe máy
+                                A1</strong></a>
+                        <a href="B1.html" class="dropdown-item"><strong style="color: #2b4f65">Học lái xe mô tô
+                                A2</strong></a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link  " role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong
+                            style="color: #2b4f65">Dịch vụ</strong></a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="thuexe.html" class="dropdown-item"><strong style="color: #2b4f65">Thuê xe tập
+                                lái</strong></a>
+                        <a href="thuexe.html" class="dropdown-item"><strong style="color: #2b4f65">Bổ túc tay lái thực
+                                tiển</strong></a>
+                    </div>
+                </div>
+                <a href="/kienthuc.html" class="nav-item nav-link active"><strong style="color: #2b4f65">Kiến
+                        thức</strong></a>
+                <a href="../contact.html" class="nav-item nav-link"><strong style="color: #2b4f65">Liên hệ</strong></a>
+            </div>
+        </div>
+
+    </nav>
+
+    <!-- header -->
+    <div id="banner-area" class="banner-area" style="background-image:url(../img/default.jpg)">
+        <div class="banner-text">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="banner-heading">
+                            <h1 class="banner-title">Dịch vụ</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb justify-content-center">
+                                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page">Dịch vụ</li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div><!-- Col end -->
+                </div><!-- Row end -->
+            </div><!-- Container end -->
+        </div><!-- Banner text end -->
+    </div>
+    <!-- end header -->
+    <!-- Body -->
+    <section id="main-container" class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <div class="post-content post-single">
+                        <div class="post-body">
+
+                            <div class="entry-header">
+
+                                <div class="post-meta">
+                                    <span class="post-cat">
+                                        <i class="far fa-folder-open"></i>
+                                        <a href="/posts/hoat-dong-doanh-nghiep">Dịch vụ</a> </span>
+                                    <span class="post-meta-date"><i class="far fa-calendar"></i> 12/03/2024</span>
+                                </div>
+
+                                <h2 class="entry-title">
+                                    Đổi bằng lái xe quốc tế</h2>
+                            </div>
+                            <div class="entry-content">
+                                <div class="content">
+                                    <div class="the_content_wrapper ">
+                                        <p>Đổi bằng lái xe Việt Nam sang Quốc tế có 2 loại là bằng lái IDP và bằng lái
+                                            IAA. Trong đó:</p>
+                                        <p><strong>1. Bằng lái xe Quốc tế IAA do các Hiệp hội ô tô quốc tế
+                                                cấp</strong>&nbsp;– International Automobile Association được viết tắt
+                                            là IAA. Bằng lái IAA có giá trị ở 196 quốc gia.</p>
+                                        <ul>
+                                            <li>Có thời hạn tối đa là 20 năm.</li>
+                                            <li>Được sử dụng tại 196 nước trên Thế giới (được sử dụng tại nước Mỹ, Úc,
+                                                Canada, Thái Lan, Malaysia …)</li>
+                                        </ul>
+                                        <p><img fetchpriority="high" decoding="async"
+                                                class="aligncenter wp-image-302 size-full"
+                                                src="https://trungtamthanhcong.edu.vn/wp-content/uploads/2021/06/doi-bang-lai-xe-quoc-te-1.jpg"
+                                                alt="đổi bằng lái xe quốc tế" width="885" height="769"
+                                                srcset="https://trungtamthanhcong.edu.vn/wp-content/uploads/2021/06/doi-bang-lai-xe-quoc-te-1.jpg 885w, https://trungtamthanhcong.edu.vn/wp-content/uploads/2021/06/doi-bang-lai-xe-quoc-te-1-300x261.jpg 300w, https://trungtamthanhcong.edu.vn/wp-content/uploads/2021/06/doi-bang-lai-xe-quoc-te-1-768x667.jpg 768w, https://trungtamthanhcong.edu.vn/wp-content/uploads/2021/06/doi-bang-lai-xe-quoc-te-1-168x146.jpg 168w, https://trungtamthanhcong.edu.vn/wp-content/uploads/2021/06/doi-bang-lai-xe-quoc-te-1-50x43.jpg 50w, https://trungtamthanhcong.edu.vn/wp-content/uploads/2021/06/doi-bang-lai-xe-quoc-te-1-86x75.jpg 86w"
+                                                sizes="(max-width:767px) 480px, (max-width:885px) 100vw, 885px"></p>
+                                        <p><strong>2. Bằng lái xe Quốc tế do Sở GTVT Việt Nam cấp</strong>&nbsp;–
+                                            International Driving Permit được gọi tắt là IDP. Bằng lái quốc tế IDP có
+                                            hiệu lực ở 86 quốc gia tham gia công ước Quốc tế Vienna năm 1968.</p>
+                                        <ul>
+                                            <li>Có thời hạn tối đa là 3 năm.</li>
+                                            <li>Được sử dụng tại 86 nước theo công ước Quốc tế Vienna năm 1968 (lưu ý:
+                                                không có nước Mỹ, Úc, Canada, Thái Lan, Malaysia …)</li>
+                                        </ul>
+                                        <h3>1. Bằng lái xe Quốc tế IAA (do Mỹ cấp)</h3>
+                                        <ul>
+                                            <li>Bằng lái xe Việt Nam, hoặc bằng nước ngoài dành cho người nước ngoài
+                                                muốn đổi sang bằng Quốc Tế</li>
+                                            <li>Chữ ký và ghi tên đầy đủ lên giấy trắng</li>
+                                            <li>File hình thẻ hoặc chân dung</li>
+                                        </ul>
+                                        <p><img decoding="async" class="aligncenter wp-image-8878 size-large"
+                                                src="https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-iaa-1024x702.jpg"
+                                                sizes="(max-width: 1024px) 100vw, 1024px"
+                                                srcset="https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-iaa-1024x702.jpg 1024w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-iaa-300x206.jpg 300w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-iaa-768x527.jpg 768w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-iaa-213x146.jpg 213w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-iaa-50x34.jpg 50w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-iaa-109x75.jpg 109w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-iaa.jpg 1280w"
+                                                alt="bằng lái xe quốc tế iaa" width="1024" height="702"></p>
+                                        <h3>2. Đổi bằng lái xe Quốc Tế IDP 85 nước do Việt Nam cấp</h3>
+                                        <ul>
+                                            <li>Bằng lái xe PET của Việt Nam còn thời hạn</li>
+                                            <li>Chữ ký trên trang giấy trắng</li>
+                                            <li>1 ảnh thẻ tự chụp bằng điện thoại</li>
+                                            <li>Hộ chiếu (chỉ cần chụp trang họ tên)</li>
+                                        </ul>
+                                        <p><img decoding="async" class="size-full wp-image-8877 aligncenter"
+                                                src="https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-idp.jpg"
+                                                sizes="(max-width: 500px) 100vw, 500px"
+                                                srcset="https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-idp.jpg 500w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-idp-300x180.jpg 300w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-idp-243x146.jpg 243w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-idp-50x30.jpg 50w, https://giaypheplaixe.edu.vn/wp-content/uploads/2019/07/bang-lai-xe-quoc-te-idp-125x75.jpg 125w"
+                                                alt="bằng lái xe quốc tế idp" width="500" height="300"></p>
+                                        <h4>3. Đổi bằng lái xe Quốc tế sang bằng lái xe Việt Nam (do Sở GTVT cấp)</h4>
+                                        <p><u>Trường hợp 1:&nbsp; Người có quốc tịch nước ngoài</u></p>
+                                        <p>– Bản photo giấy phép lái xe nước ngoài</p>
+                                        <p>– Bản photo Passport</p>
+                                        <p>– &nbsp;Bản photo Visa hoặc thẻ tạm trú</p>
+                                        <p>– 2 tấm ảnh 3×4 (theo mẫu quy định)</p>
+                                        <p>– Có mặt tại Sở GTVT tầm 2 phút để ký tên.</p>
+                                        <p><u>Trường hợp 2: Người nước ngoài có quốc tịch Việt Nam</u></p>
+                                        <p>– Bản photo giấy phép lái xe nước ngoài</p>
+                                        <p>– Bản photo Passport</p>
+                                        <p>– Bản photo Visa qua nước ngoài trước đây</p>
+                                        <p>– Bản photo Chứng minh nhân dân</p>
+                                        <p>– 2 tấm hình 3×4</p>
+                                        <p>– Có mặt tại Sở GTVT tầm 2 phút để ký tên</p>
+                                        <p><u>Trường hợp 3: Người có 2 quốc tịch (song tịch)</u></p>
+                                        <p>– Bản photo giấy phép lái xe nước ngoài</p>
+                                        <p>– Bản photo Passport Việt Nam + Passport nước ngoài</p>
+                                        <p>– Bản photo Visa qua nước ngoài trước đây</p>
+                                        <p>– Bản photo Chứng minh nhân dân (nếu có)</p>
+                                        <p>– 2 tấm hình 3×4</p>
+                                        <p>– Có mặt tại Sở GTVT tầm 2 phút để ký tên</p>
+                                        <h3><strong>Bảng giá đổi bằng lái xe Quốc Tế</strong></h3>
+                                        <h4>1. Giá đổi bằng lái xe Quốc Tế IDP do Cục Đường Bộ Việt Nam cấp</h4>
+                                        <p>Trọn gói:&nbsp;<strong>1.500.000đ</strong></p>
+                                        <h4>2. Giá đổi bằng lái xe Quốc Tế IAA do Mỹ cấp</h4>
+                                        <h4>Gói 4 ngày có bằng:</h4>
+                                        <p>– Hạn sử dụng 1 năm:&nbsp;<strong>1.500.000đ</strong></p>
+                                        <p>– Hạn sử dụng 3 năm:&nbsp;<strong>1.700.000đ</strong></p>
+                                        <p>– Hạn sử dụng 5 năm:&nbsp;<strong>1.900.000đ</strong></p>
+                                        <p>– Hạn sử dụng 10 năm:&nbsp;<strong>2.100.000đ</strong></p>
+                                        <p>– Hạn sử dụng 20 năm:&nbsp;<strong>2.300.000đ</strong></p>
+                                        <p><strong>Lưu ý:&nbsp;</strong>Khoảng thu phí này đã bao gồm phí bảo hiểm. Bảo
+                                            hiểm này cho phép trong quá trình sử dụng bằng lái xe Quốc tế, bằng lái của
+                                            quý khách bị mất hoặc hư hỏng, thay đổi số Seri hay địa chỉ… Chúng
+                                            tôi<strong>&nbsp;</strong>sẽ hỗ trợ làm lại.</p>
+                                        <h4>3. Giá đổi bằng lái xe Quốc tế sang Việt Nam</h4>
+                                        <p>Trọn gói:&nbsp;<strong>1.900.000đ (</strong>Mức giá này áp dụng cho tất cả
+                                            các hạng A1, A2, B1, B2, C, D, E, F) Do Sở GTVT TPHCM cấp và&nbsp;<strong>có
+                                                giá trị như bằng lái xe tại Việt Nam</strong>.</p>
+                                        <h3><em>Các bước đổi bằng lái xe Quốc tế:</em></h3>
+                                        <ol>
+                                            <li><em>Gửi thông tin người cần đổi: Giấy phép lái xe, mẫu chữ ký, file hình
+                                                    thẻ tới <strong>=&gt; </strong></em><strong><span
+                                                        style="font-size: 14pt;"><a
+                                                            href="https://zalo.me/0901003777">ZALO</a></span></strong>
+                                            </li>
+                                            <li><em>Chúng tôi sẽ tư vấn cho bạn chọn loại Bằng lái xe Quốc tế và thời
+                                                    hạn dùng cho phù hợp.</em></li>
+                                            <li><em>Cho địa chỉ nhận bằng tại nhà hoặc lấy bằng trực tiếp tại văn
+                                                    phòng.</em></li>
+                                            <li><em>Nhận bằng và thanh toán tiền phí đổi bằng.</em></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tags-area d-flex align-items-center justify-content-between">
+                                <div class="post-tags">
+                                    <a href="/tag/hoat-dong">HOẠT ĐỘNG</a>
+                                </div>
+                                <div class="share-items">
+                                    <ul class="post-social-icons list-unstyled">
+                                        <li class="social-icons-head">Chia sẻ:</li>
+                                        <li><a href="#" target=""><i class="fab fa-facebook-f"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <section id="news" class="news" style="padding:20px 0">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12" style="margin-bottom:10px">
+                                    <h3 class="section-title">Bài viết khác</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+
+
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="latest-post">
+                                        <div class="latest-post-media">
+                                            <a href="/post/trai-nghiem-cua-so-thong-minh-the-he-moi-3-trong-1"
+                                                class="latest-post-img">
+                                                <img loading="lazy" class="img-fluid" src="/img/bang-lai-xe-b11.jpg"
+                                                    alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="post-body">
+                                            <h4 class="post-title">
+                                                <a href="/post/trai-nghiem-cua-so-thong-minh-the-he-moi-3-trong-1"
+                                                    class="d-inline-block">THUÊ XE TẬP LÁI</a>
+                                            </h4>
+                                            <div class="latest-post-meta">
+                                                <span class="post-item-date">
+                                                    <i class="fa fa-clock-o"></i> 08/03/2024 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="latest-post">
+                                        <div class="latest-post-media">
+                                            <a href="/post/gioi-thieu-bo-cua-di-tai-showroom-nguyen-trinh"
+                                                class="latest-post-img">
+                                                <img loading="lazy" class="img-fluid" src="/img/post2.jpg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="post-body">
+                                            <h4 class="post-title">
+                                                <a href="/post/gioi-thieu-bo-cua-di-tai-showroom-nguyen-trinh"
+                                                    class="d-inline-block">GIỚI THIỆU KHÓA HỌC LÁI XE NGYỄN TRÌNH</a>
+                                            </h4>
+                                            <div class="latest-post-meta">
+                                                <span class="post-item-date">
+                                                    <i class="fa fa-clock-o"></i> 07/03/2024 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="latest-post">
+                                        <div class="latest-post-media">
+                                            <a href="/post/cua-di-mo-lua-nhom-kinh-hop-nan-dong-tai-showroom-nguyen-trinh"
+                                                class="latest-post-img">
+                                                <img loading="lazy" class="img-fluid" src="/img/post3.jpg" alt="img">
+                                            </a>
+                                        </div>
+                                        <div class="post-body">
+                                            <h4 class="post-title">
+                                                <a href="/post/cua-di-mo-lua-nhom-kinh-hop-nan-dong-tai-showroom-nguyen-trinh"
+                                                    class="d-inline-block">HỌC LÁI XE A1, A2 &amp; B, C</a>
+                                            </h4>
+                                            <div class="latest-post-meta">
+                                                <span class="post-item-date">
+                                                    <i class="fa fa-clock-o"></i> 07/03/2024 </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar sidebar-right">
+                        <div class="widget recent-posts">
+                            <h3 class="widget-title">Bài viết mới</h3>
+                            <ul class="list-unstyled">
+
+                                <li class="d-flex align-items-center">
+                                    <div class="posts-thumb">
+                                        <a href="/post/trai-nghiem-cua-so-thong-minh-the-he-moi-3-trong-1"><img
+                                                loading="lazy" alt="img" src="/img/bang-lai-xe-b11.jpg"></a>
+                                    </div>
+                                    <div class="post-info">
+                                        <h4 class="entry-title">
+                                            <a href="/post/trai-nghiem-cua-so-thong-minh-the-he-moi-3-trong-1">TRÃI
+                                                NGHIỆM CHƯƠNG TRÌNH HỌC LÁI XE KÈM 1 VS 1</a>
+                                        </h4>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="posts-thumb">
+                                        <a href="/post/gioi-thieu-bo-cua-di-tai-showroom-nguyen-trinh"><img
+                                                loading="lazy" alt="img" src="/img/post2.jpg"></a>
+                                    </div>
+                                    <div class="post-info">
+                                        <h4 class="entry-title">
+                                            <a href="/post/gioi-thieu-bo-cua-di-tai-showroom-nguyen-trinh">GIỚI THIỆU
+                                                KHÓA HỌC LÁI XE NGUYỄN TRÌNH</a>
+                                        </h4>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="posts-thumb">
+                                        <a href="/post/cua-di-mo-lua-nhom-kinh-hop-nan-dong-tai-showroom-nguyen-trinh"><img
+                                                loading="lazy" alt="img" src="/img/post3.jpg"></a>
+                                    </div>
+                                    <div class="post-info">
+                                        <h4 class="entry-title">
+                                            <a
+                                                href="/post/cua-di-mo-lua-nhom-kinh-hop-nan-dong-tai-showroom-nguyen-trinh">CÁC
+                                                KHÓA HỌC LÁI XE A1, A2 &amp; B, C</a>
+                                        </h4>
+                                    </div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="posts-thumb">
+                                        <a href="/post/do-an-quy-hoach-xay-dung-ttxh"><img loading="lazy" alt="img"
+                                                src="https://nguyentrinh.com.vn/images/posts/12yhop/Untitled-1.jpg"></a>
+                                    </div>
+                                    <div class="post-info">
+                                        <h4 class="entry-title">
+                                            <a href="/post/do-an-quy-hoach-xay-dung-ttxh">[CÔNG BỐ] ĐỒ ÁN QUY HOẠCH XÂY
+                                                DỰNG CHI TIẾT XÂY DỰNG RÚT GỌN TRUNG TÂM ĐÀO TẠO VÀ SÁT HẠCH LÁI XE CƠ
+                                                GIỚI ĐƯỜNG BỘ LOẠI 1</a>
+                                        </h4>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <div class="widget">
+                            <h3 class="widget-title">Danh mục</h3>
+                            <ul class="arrow nav nav-tabs">
+                                <li><a href="/posts/hoat-dong-doanh-nghiep">Hoạt động doanh nghiệp</a></li>
+                                <li><a href="/posts/cong-bo-thong-tin">Công bố thông tin</a></li>
+                                <li><a href="/posts/tuyen-dung">Tuyển dụng</a></li>
+                                <li><a href="/posts/quyet-dinh">Quyết định</a></li>
+                                <li><a href="/posts/video">Video</a></li>
+                            </ul>
+                        </div>
+                        <div class="widget widget-tags">
+                            <h3 class="widget-title">Thẻ </h3>
+                            <ul class="list-unstyled">
+                                <li><a href="/tag/cong-bo">CÔNG BỐ</a></li>
+                                <li><a href="/tag/hoat-dong">HOẠT ĐỘNG</a></li>
+                                <li><a href="/tag/tuyen-dung">TUYỂN DỤNG</a></li>
+                                <li><a href="/tag/quyet-dinh">QUYẾT ĐỊNH</a></li>
+                                <li><a href="/tag/video">VIDEO</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Body -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer my-6 mb-0 py-6 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-4">Thông tin</h4>
+                    <p class="big-title"><strong>DNTN SX-TM Nguyễn Trình</strong></p>
+                    <p>Địa chỉ: Đường Nguyễn Đáng, Khóm 10, Phường 9, TP. Trà Vinh</p>
+                    <p>Mã số thuế: 2100236683</p>
+                    <p>Số điện thoại: 0903336470</p>
+                    <p>Email: nguyentrinh@gmail.com</p>
+                    <div class="footer-social">
+                        <h6 class="text-white mt-4 mb-3">Theo dõi chúng tôi</h6>
+                        <div class="d-flex pt-2">
+                            <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-square btn-outline-light me-1" href=""><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-square btn-outline-light me-1" href=""><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square btn-outline-light me-0" href=""><i
+                                    class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-4">Facebook</h4>
+                    <div id="fb-root" class=" fb_reset">
+                        <div style="position: absolute; top: -10000px; width: 0px; height: 0px;">
+                            <div></div>
+                        </div>
+                    </div>
+                    <script async="" defer="" crossorigin="anonymous"
+                        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&amp;version=v19.0"
+                        nonce="L5mCPRLp"></script>
+                    <div class="fb-page fb_iframe_widget"
+                        data-href="https://www.facebook.com/profile.php?id=100094631493232" data-tabs="timeline"
+                        data-width="" data-height="250" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered"
+                        fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=350&amp;height=250&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100094631493232&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width=">
+                        <span style="vertical-align: bottom; width: 340px; height: 250px;"><iframe
+                                name="ff82dcb91b9503c05" width="1000px" height="250px"
+                                data-testid="fb:page Facebook Social Plugin" title="fb:page Facebook Social Plugin"
+                                frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no"
+                                allow="encrypted-media"
+                                src="https://www.facebook.com/v19.0/plugins/page.php?adapt_container_width=true&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df2411e67fb6cc573a%26domain%3Dnguyentrinh.com.vn%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fnguyentrinh.com.vn%252Ff720d6a712bd46658%26relation%3Dparent.parent&amp;container_width=350&amp;height=250&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100094631493232&amp;locale=vi_VN&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline&amp;width="
+                                style="border: none; visibility: visible; width: 340px; height: 250px;"
+                                class=""></iframe></span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-white mb-4">Địa điểm</h4>
+                    <div class="working-hours">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d245.63233749748625!2d106.3375597152774!3d9.924179611521206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0175b80077a69%3A0x88e890ee0daf9887!2zQ-G7rWEgSMOgbmcgTmjDtG0gS8OtbmggLSBT4bqvdCBWbHhkIE5ndXnhu4VuIFRyw6xuaA!5e0!3m2!1svi!2s!4v1708161529516!5m2!1svi!2s"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="copyright-info text-center">
+                            <span>Copyright ©
+                                <script>
+                                    document.write(new Date().getFullYear()) 
+                                </script>2024
+                            </span> DNTN Sản xuất - Thương mại Nguyễn Trình. All rights reserved.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+    <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed"
+        style="display: block;">
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+    <a id="zalo" target="_bank" href="https://zalo.me/0903336470">
+        <img src="/img/zalo.png" width="35px" height="" style="padding-bottom: 2px">
+    </a>
+    <a id="messenger" target="_bank" href="https://www.facebook.com/messages/t/109789528842656">
+        <img src="/img/messenger.png" width="35px" height="" style="padding-bottom: 2px">
+    </a>
+    <a id="call" href="tel:0903336470">
+        <img class="trin-trin" src="/img/call.png" width="35px" height="" style="padding-bottom: 2px">
+    </a>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
