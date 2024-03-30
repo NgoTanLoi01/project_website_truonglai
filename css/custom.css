@@ -788,9 +788,9 @@ ul.navbar-nav>li>a {
 }
 
 .btn.btn-light {
-    background-color: transparent; /* Đặt nền trong suốt */
-    border-color: transparent; /* Xóa viền */
-    color: #e4b92d; /* Màu chữ mặc định */
+    background-color: #e4b92d; /* Đặt nền trong suốt */
+    border-color: #fff; /* Xóa viền */
+    color: #fff; /* Màu chữ mặc định */
     transition: background-color 0.3s ease; /* Thêm hiệu ứng chuyển đổi màu nền */
     border: 2px solid #e4b92d;
 }

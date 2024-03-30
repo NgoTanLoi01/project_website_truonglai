@@ -8043,8 +8043,8 @@ fieldset:disabled .btn {
 }
 
 .py-1 {
-    padding-top: .25rem !important;
-    padding-bottom: .25rem !important
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important
 }
 
 .py-2 {
@@ -8316,8 +8316,7 @@ fieldset:disabled .btn {
 
 
 .text-dark {
-    color: #2b4f65!important
-    
+    color: #2b4f65 !important
 }
 
 .text-white {
